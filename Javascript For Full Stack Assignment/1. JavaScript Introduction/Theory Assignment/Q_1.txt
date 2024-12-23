@@ -1,0 +1,15 @@
+Question 1: What is JavaScript? Explain the role of JavaScript in web development.
+
+=> JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive content on websites.
+
+=> Role of JavaScript in Web Development:
+    -> Client-Side Interactivity
+    -> DOM Manipulation
+    -> Event Handling
+    -> Asynchronous Communication
+    -> Cross-Browser Compatibility
+    -> Rich User Interfaces
+    -> Backend Development
+    -> Integration with APIs
+    -> Game Development
+    -> Mobile and Desktop Applications
