@@ -1,0 +1,45 @@
+Question 2: Explain the different data types in JavaScript. Provide examples for each.
+
+=> JavaScript has 7 primitive data types and 1 non-primitive data type:
+=> Primitive Data Types:
+
+1) Number: Represents numeric values (integers, floats)
+-> Example : 
+        let age = 25;
+        let price = 9.99;
+
+2) String: Represents a sequence of characters.
+-> Example : 
+        let name = "John";
+        let greeting = 'Hello, World!';
+
+3) Boolean: Represents a logical value, either true or false.
+-> Example : 
+        let isStudent = true;
+        let isLoggedIn = false;
+
+4) Null: Represents the intentional absence of a value.
+-> Example : 
+        let emptyValue = null; 
+
+5) Undefined: Represents a variable that has been declared but not assigned a value.
+-> Example : 
+        let notDefined;
+
+6) Symbol: Represents a unique and immutable value, often used as keys in objects.
+-> Example : 
+        let id = Symbol("user_id");
+
+7) BigInt: Represents a whole number larger than the maximum number that can be represented by the Number type.
+-> Example : 
+        let bigNumber = 123456789012345678901234567890n;
+
+=> Non-Primitive Data Type:
+
+1) Object: A collection of key-value pairs.
+-> Example : 
+        let person = {
+            name: "Alice",
+            age: 30,
+            isStudent: false
+        };

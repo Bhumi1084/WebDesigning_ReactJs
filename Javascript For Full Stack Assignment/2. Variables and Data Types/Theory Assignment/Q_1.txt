@@ -1,0 +1,20 @@
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let, and const?
+
+=> In JavaScript, variables are used to store data values.
+
+=> Declaring Variables:
+
+1. Using var:
+-> Variables declared with var are hoisted to the top of their scope, but their value is undefined until the assignment is made.
+-> Example : var x = 5; // Declare and initialize
+            console.log(x); 
+
+2. Using let:
+-> Variables declared with let are hoisted but remain in a "temporal dead zone" until the declaration is encountered.
+-> Example : let y = 20;  // Declare and initialize       
+            console.log(y);
+
+3. Using const:
+-> Like let, const is also hoisted but remains in the "temporal dead zone.
+-> Example : const z = 50;  // Declare and initialize
+            console.log(z);

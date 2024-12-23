@@ -1,0 +1,16 @@
+Question 3: What is the difference between undefined and null in JavaScript?
+
+=> undefined: Indicates a variable that has been declared but not yet assigned a value.
+=> Null: Represents the intentional absence of any object value.
+
+=> undefined: Automatically assigned to variables that are declared but not initialized.
+=> Null: Must be explicitly assigned to a variable.
+
+=> undefined: Used by JavaScript when a variable is not assigned a value.
+=> Null: Used intentionally by developers to indicate “no value” or “empty”.
+
+=> undefined: undefined is a global property with the value undefined .
+=> Null: null is a global property with the value null .
+
+=> undefined: undefined values are omitted during serialization.
+=> Null: null values are preserved during JSON serialization (e.g., {“key”: null} ).
