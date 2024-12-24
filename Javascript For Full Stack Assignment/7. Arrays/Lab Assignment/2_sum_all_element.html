@@ -1,0 +1,36 @@
+<!-- Write a program to find the sum of all elements in an array of numbers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+    <script>
+        function calculateSum(array) {
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            return sum;
+        }
+        function displaySum() {
+            const input = document.getElementById("arrayInput").value; 
+            const array = input.split(",").map(Number);
+            if (array.some(isNaN)) {
+                document.getElementById("result").innerHTML = "Please enter valid numbers separated by commas.";
+            } else {
+                const sum = calculateSum(array);
+                document.getElementById("result").innerHTML = "The sum of the array elements is: " + sum;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Sum of Array Elements</h2>
+    <p>Enter numbers separated by commas:</p>
+    <input type="text" id="arrayInput" placeholder="e.g., 1,2,3,4">
+    <button onclick="displaySum()">Calculate Sum</button>
+    <p id="result"></p>
+</body>
+</html>

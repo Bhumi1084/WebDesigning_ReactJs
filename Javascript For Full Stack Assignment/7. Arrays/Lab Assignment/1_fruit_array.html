@@ -1,0 +1,51 @@
+<!-- Declare an array of fruits (["apple", "banana", "cherry"]). Use JavaScript to:
+ Add a fruit to the end of the array.
+ Remove the first fruit from the array.
+ Log the modified array to the console. -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dynamic Add and Remove Elements</title>
+     <script>
+         let fruits = ["apple", "banana", "cherry"];
+         function updateArrayDisplay() {
+             document.getElementById("arrayDisplay").innerHTML = "Array: " + fruits.join(", ");
+         }
+         function addElement() {
+             const newElement = document.getElementById("newElement").value;
+             if (newElement) {
+                 fruits.push(newElement);
+                 updateArrayDisplay();
+                 document.getElementById("newElement").value = "";
+             } else {
+                 alert("Please enter a valid element.");
+             }
+         }
+         function removeElement() {
+             const elementToRemove = document.getElementById("removeElement").value;
+             const index = fruits.indexOf(elementToRemove);
+             if (index !== -1) {
+                 fruits.splice(index, 1);
+                 updateArrayDisplay();
+                 document.getElementById("removeElement").value = "";
+             } else {
+                 alert("Element not found in the array.");
+             }
+         }
+     </script>
+ </head>
+ <body>
+     <h2>Dynamic Add and Remove Array Elements</h2>
+     <p>Array: <span id="arrayDisplay">apple, banana, cherry</span></p>     
+     <h3>Add an Element</h3>
+     <input type="text" id="newElement" placeholder="Enter element to add">
+     <button onclick="addElement()">Add Element</button>     
+     <h3>Remove an Element</h3>
+     <input type="text" id="removeElement" placeholder="Enter element to remove">
+     <button onclick="removeElement()">Remove Element</button>
+ </body>
+ </html>
+ 
