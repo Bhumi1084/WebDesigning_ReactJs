@@ -1,0 +1,16 @@
+Question 2: What is the difference between a function declaration and a function expression?
+
+=> Function Declaration: Can be called before declaration.
+=> Function Expression: Cannot be called before declaration.
+
+=> Function Declaration: Defined using the function keyword.
+=> Function Expression: Assigned to a variable (can be anonymous).
+
+=> Function Declaration: Ideal for defining reusable, named functions.
+=> Function Expression: Used for callbacks or scoped functions.
+
+=> Function Declaration: Always named.
+=> Function Expression: Can be named or anonymous.
+
+=> Function Declaration: Easier to debug due to explicit naming.
+=> Function Expression: Anonymous functions make debugging harder.

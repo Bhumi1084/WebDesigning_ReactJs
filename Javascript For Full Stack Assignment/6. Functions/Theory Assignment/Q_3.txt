@@ -1,0 +1,14 @@
+Question 3: Discuss the concept of parameters and return values in functions.
+
+=> Functions in JavaScript are powerful tools for creating reusable, modular code. 
+
+=> Two key concepts in functions are parameters and return values. 
+
+=> These allow functions to accept inputs, process them, and provide outputs.
+
+=> Parameters are placeholders or variables defined in the function declaration to accept input values when the 
+    function is called.
+
+=> The return statement specifies the value a function should output to the caller. 
+
+=> A function can have a return statement to send a result back or perform an action without returning a value.
