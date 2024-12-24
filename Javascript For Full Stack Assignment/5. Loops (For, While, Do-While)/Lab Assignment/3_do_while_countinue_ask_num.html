@@ -1,0 +1,28 @@
+<!-- Write a do-while loop that continues to ask the user for input until they enter a number greater than 10. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop Example</title>
+    <script>
+        function askForNumber() {
+            let number;
+            do {
+                number = parseInt(prompt("Enter a number greater than 10:"));             
+                if (isNaN(number)) {
+                    alert("That's not a valid number. Please try again.");
+                }
+            } while (isNaN(number) || number <= 10);
+            document.getElementById("result").innerHTML = 
+                "Thank you! You entered: " + number;
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter a Number Greater Than 10</h2>
+    <button onclick="askForNumber()">Start</button>
+    <p id="result"></p>
+</body>
+</html>

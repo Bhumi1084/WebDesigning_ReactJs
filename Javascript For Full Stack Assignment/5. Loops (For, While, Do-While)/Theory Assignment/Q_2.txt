@@ -1,0 +1,16 @@
+Question 2: What is the difference between a while loop and a do-while loop?
+
+=> While Loop: The condition is checked before the loop body is executed.
+=> Do-While Loop: The condition is checked after the loop body is executed.
+
+=> While Loop: The loop body may not execute at all if the condition is false initially.
+=> Do-While Loop: The loop body is guaranteed to execute at least once, regardless of the condition.
+
+=> While Loop: Used when the loop should only run if the condition is initially true.
+=> Do-While Loop: Used when the loop must execute at least once before checking the condition.
+
+=> While Loop: javascript while (condition) { // Code }
+=> Do-While Loop: javascript do { // Code } while (condition);
+
+=> While Loop: Suitable for pre-validation.
+=> Do-While Loop: Suitable for post-validation or initialization tasks.

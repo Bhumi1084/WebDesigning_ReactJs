@@ -1,0 +1,65 @@
+Question 1: Explain the different types of loops in JavaScript (for, while, do-while). Provide a
+basic example of each.
+
+1. For Loop
+=> The for loop is used when you know the number of iterations beforehand. It consists of three parts:
+
+    -> Initialization: Sets the starting value of the loop counter.
+    -> Condition: Determines how long the loop runs.
+    -> Increment/Decrement: Updates the loop counter after each iteration.
+=> Example:
+let arr = [5, 3, 8, 1, 2];
+for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - 1 - i; j++) {
+        if (arr[j] > arr[j + 1]) {
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+console.log("Sorted array (for loop):", arr);
+
+
+2. While Loop
+=> The while loop is used when the number of iterations is unknown, and the condition is evaluated before each 
+iteration.
+
+=> Example:
+let arr = [5, 3, 8, 1, 2];
+let swapped = true;
+
+while (swapped) {
+    swapped = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            let temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+            swapped = true;
+        }
+    }
+}
+console.log("Sorted array (while loop):", arr);
+
+3. Do-While Loop
+=> The do-while loop is similar to the while loop but guarantees at least one execution because the condition is 
+checked after the code block is executed.
+
+=> Example:
+let arr = [5, 3, 8, 1, 2];
+let swapped;
+
+do {
+    swapped = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            let temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+            swapped = true;
+        }
+    }
+} while (swapped);
+
+console.log("Sorted array (do-while loop):", arr);
