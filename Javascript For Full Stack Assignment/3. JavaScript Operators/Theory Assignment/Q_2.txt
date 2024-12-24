@@ -1,0 +1,13 @@
+Question 2: What is the difference between == and === in JavaScript?
+
+=> == : in JavaScript is used for comparing two variable but it ignores the  datatype of variable.
+=> === : is used for comparing two variable but this operator also checks datatype and compare two values.
+
+=> == : it is called as comparison operator.
+=> === : it is also called as comparison operator.
+
+=> == : checks the equality of two operands without considering their type.
+=> == : comapres equality of two operands with their type.
+
+=> == : make type correction based upon values of variables.
+=> === : takes type of variables in consideration.

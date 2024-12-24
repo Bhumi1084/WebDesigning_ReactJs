@@ -1,0 +1,46 @@
+<!-- Add,subtract, multiply, and divide two numbers using arithmetic operators. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+    <script>
+      function performArithmetic() {
+          let num1 = parseFloat(document.getElementById("num1").value);
+          let num2 = parseFloat(document.getElementById("num2").value);
+
+          if (isNaN(num1) || isNaN(num2)) {
+              alert("Please enter valid numbers");
+              return;
+          }
+          let addition = num1 + num2;
+          let subtraction = num1 - num2;
+          let multiplication = num1 * num2;
+          let division = num2 !== 0 ? (num1 / num2) : "Infinity"; // Avoid division by zero
+          document.getElementById("additionResult").innerHTML = "Addition: " + num1 + " + " + num2 + " = " + addition;
+          document.getElementById("subtractionResult").innerHTML = "Subtraction: " + num1 + " - " + num2 + " = " + subtraction;
+          document.getElementById("multiplicationResult").innerHTML = "Multiplication: " + num1 + " * " + num2 + " = " + multiplication;
+          document.getElementById("divisionResult").innerHTML = "Division: " + num1 + " / " + num2 + " = " + division;
+      }
+  </script>
+  </head>
+  <body>
+    <h1 style="color: rgb(4, 0, 255);">Arithmetic Operations on Two Numbers</h1>
+
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" required>
+    <br><br>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" required>
+    <br><br>
+    <button onclick="performArithmetic()">Calculate</button>
+    <h3>Results:</h3>
+    <p id="additionResult"></p>
+    <p id="subtractionResult"></p>
+    <p id="multiplicationResult"></p>
+    <p id="divisionResult"></p>
+  </body>
+</html>

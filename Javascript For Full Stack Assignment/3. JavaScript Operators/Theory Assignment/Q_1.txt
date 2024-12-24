@@ -1,0 +1,70 @@
+Question 1: What are the different types of operators in JavaScript? Explain with examples.
+o Arithmetic operators
+o Assignment operators
+o Comparison operators
+o Logical operators
+
+=> JavaScript provides various operators to perform specific tasks. Here's a breakdown of the four main types of operators along with explanations and examples:
+
+1. Arithmetic Operators:
+=> Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication, etc.
+=> Example:
+    let a = 10;
+    let b = 3;
+    console.log("Addition: " + (a + b));      
+    console.log("Subtraction: " + (a - b));   
+    console.log("Multiplication: " + (a * b));
+    console.log("Division: " + (a / b));      
+    console.log("Modulus: " + (a % b));       
+    console.log("Increment: " + (++a));       
+    console.log("Decrement: " + (--b));       
+
+2. Assignment Operators:
+=> Assignment operators are used to assign values to variables. They can also perform operations like addition, subtraction, etc., while assigning.
+=> Example: 
+    let x = 10; 
+    console.log("Initial Value: " + x); 
+    x += 5; 
+    console.log("After +=: " + x);
+    x -= 3; 
+    console.log("After -=: " + x);
+    x *= 2; 
+    console.log("After *=: " + x);
+    x /= 4; 
+    console.log("After /=: " + x); 
+    x %= 2; 
+    console.log("After %=: " + x); 
+
+3. Comparison Operators
+=> Comparison operators compare two values and return a boolean (true or false).
+=> Example:
+    let a = 10;
+    let b = "10";
+    let c = 5;
+    console.log("Equal to (==): " + (a == b)); 
+    console.log("Strict equal to (===): " + (a === b));
+    console.log("Not equal to (!=): " + (a != c));
+    console.log("Strict not equal to (!==): " + (a !== b));
+    console.log("Greater than (>): " + (a > c)); 
+    console.log("Less than (<): " + (c < a));
+    console.log("Greater than or equal to (>=): " + (a >= c));
+    console.log("Less than or equal to (<=): " + (c <= a));
+
+4. Logical Operators:
+=> Logical operators are used to combine multiple conditions or invert them. They are often used in decision-making.
+=> Example:
+    let age = 25;
+    let hasLicense = true;
+    if (age >= 18 && hasLicense) {
+        console.log("You can drive!");
+    } 
+    else {
+        console.log("You cannot drive.");
+    }
+    
+    let hasPermit = false;
+    if (age >= 18 || hasPermit) {
+        console.log("You are eligible for driving.");
+    }
+    let isAdult = false;
+    console.log("Is not an adult: " + (!isAdult));

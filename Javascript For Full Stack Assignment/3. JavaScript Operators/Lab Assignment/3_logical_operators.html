@@ -1,0 +1,34 @@
+<!-- Use logical operators to check if both conditions (e.g., a > 10 and b < 5) are true. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators Example</title>
+    <script>
+        function checkConditions() {
+            var a = parseInt(document.getElementById("numA").value);
+            var b = parseInt(document.getElementById("numB").value);
+            if (a > 10 && b < 5) {
+                document.getElementById("result").innerHTML = "Both conditions are true: a > 10 and b < 5.";
+            } else if (a > 10 || b < 5) {
+                document.getElementById("result").innerHTML = "Only one condition is true.";
+            } else {
+                document.getElementById("result").innerHTML = "Neither condition is true.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check Logical Conditions</h2>
+    <label for="numA">Enter a number (a):</label>
+    <input type="number" id="numA">
+    <br><br>
+    <label for="numB">Enter another number (b):</label>
+    <input type="number" id="numB">
+    <br><br>
+    <button onclick="checkConditions()">Check Conditions</button>
+    <p id="result"></p>
+</body>
+</html>

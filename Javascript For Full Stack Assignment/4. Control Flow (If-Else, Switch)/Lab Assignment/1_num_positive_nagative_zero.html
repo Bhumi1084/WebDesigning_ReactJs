@@ -1,0 +1,33 @@
+<!-- Write a JavaScript program to check if a number is positive, negative, or zero using
+an if-else statement. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Number Type</title>
+    <script>
+        function checkNumberType() {
+            var num = parseFloat(document.getElementById("number").value);
+            if (num > 0) {
+                document.getElementById("result").innerHTML = "The number is positive.";
+            } else if (num < 0) {
+                document.getElementById("result").innerHTML = "The number is negative.";
+            } else if (num === 0) {
+                document.getElementById("result").innerHTML = "The number is zero.";
+            } else {
+                document.getElementById("result").innerHTML = "Please enter a valid number.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Check if a Number is Positive, Negative, or Zero</h2>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number">
+    <br><br>
+    <button onclick="checkNumberType()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
