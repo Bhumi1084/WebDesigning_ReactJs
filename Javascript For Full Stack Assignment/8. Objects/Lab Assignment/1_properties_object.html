@@ -1,0 +1,60 @@
+<!-- Create a JavaScript object car with properties brand, model, and year. Use JavaScript
+to:
+Access and print the car’s brand and model.
+Update the year property.
+Add a new property color to the car object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Object Dynamic Modification</title>
+    <script>
+        let car = {
+            brand: "Toyota",
+            model: "Corolla",
+            year: 2020
+        };
+        function displayCarDetails() {
+            document.getElementById("carDetails").innerHTML = `
+                Brand: ${car.brand}<br>
+                Model: ${car.model}<br>
+                Year: ${car.year}<br>
+                Color: ${car.color || "Not specified"}
+            `;
+        }
+        function updateYear() {
+            const newYear = document.getElementById("newYear").value;
+            if (newYear) {
+                car.year = newYear;
+                displayCarDetails();
+                document.getElementById("newYear").value = "";
+            } else {
+                alert("Please enter a valid year.");
+            }
+        }
+        function addColor() {
+            const color = document.getElementById("newColor").value;
+            if (color) {
+                car.color = color;
+                displayCarDetails();
+                document.getElementById("newColor").value = "";
+            } else {
+                alert("Please enter a valid color.");
+            }
+        }
+        window.onload = displayCarDetails;
+    </script>
+</head>
+<body>
+    <h2>Car Object Dynamic Modification</h2>
+    <p id="carDetails"></p>   
+    <h3>Update Year</h3>
+    <input type="number" id="newYear" placeholder="Enter new year">
+    <button onclick="updateYear()">Update Year</button>   
+    <h3>Add Color</h3>
+    <input type="text" id="newColor" placeholder="Enter car color">
+    <button onclick="addColor()">Add Color</button>   
+</body>
+</html>

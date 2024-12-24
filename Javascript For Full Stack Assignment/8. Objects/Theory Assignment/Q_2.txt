@@ -1,0 +1,22 @@
+Question 2: Explain how to access and update object properties using dot notation and
+bracket notation.
+
+1. Dot Notation:
+    => Accessing Properties:
+        -> In dot notation, you use a period (.) followed by the property name to access a value.
+        -> The property name must be a valid identifier (a string without spaces or special characters, except underscores 
+            or dollar signs).
+
+        => Updating Properties:
+            -> To update a property, you simply assign a new value using dot notation.
+
+2. Bracket Notation:
+    => Accessing Properties:
+        -> In bracket notation, you use square brackets ([]) and pass the property name as a string (i.e., inside quotes).
+        -> Bracket notation is useful when the property name is dynamic or contains special characters (spaces, hyphens, etc.), which dot notation cannot handle.
+
+    => Updating Properties:
+        -> You can also update properties using bracket notation by assigning a new value.
+
+=> Dot notation is the most commonly used way to access or update object properties, but bracket notation is 
+    necessary when dealing with invalid identifiers or when using variables to access properties dynamically.

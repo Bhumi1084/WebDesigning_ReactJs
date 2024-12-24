@@ -1,0 +1,11 @@
+Question 1: What is an object in JavaScript? How are objects different from arrays?
+
+=> An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+
+=> A property's value can be a function, in which case the property is known as a method. 
+
+=> Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
+
+=> Objects represent a special data type that is mutable and can be used to store a collection of data (rather than just a single value).
+
+=> Arrays are a special type of variable that is also mutable and can also be used to store a list of values.
