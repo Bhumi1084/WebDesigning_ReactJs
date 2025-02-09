@@ -1,0 +1,26 @@
+question 1: Explain the setTimeout() and setinterval() function in javascript. How are theyused for timing events?
+
+=> 1. setTimeout():
+                setTimeout() allows you to execute a function once after a certain delay (in milliseconds).
+
+=>Syntax:
+
+setTimeout(callback, delay);
+
+=>callback: The function you want to execute.
+=>delay: The number of milliseconds to wait before executing the callback.
+
+=>Important Notes:
+
+The function only executes once after the specified delay.
+The delay is not guaranteed to be exact (it may be slightly delayed depending on the execution context).
+
+=>2. setInterval()
+                  setInterval() is used to repeatedly execute a function at specified intervals((in milliseconds).
+
+=>Syntax:
+
+setInterval(callback, interval);
+
+=>callback: The function to execute.
+=>interval: The time interval in milliseconds between each execution.

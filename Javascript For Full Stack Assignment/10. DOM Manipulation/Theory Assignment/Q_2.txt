@@ -1,0 +1,32 @@
+question 2: Explain the methods getElementById(), getElementsByClassName(), and querySelector() used to
+             select elements from the DOM.
+             
+=>1. getElementById()
+                        The getElementById() method is used to select a single element based on its id attribute.
+        This method returns a reference to the first element with the specified id, or null if no element with 
+        that id exists.
+
+=>Syntax:
+javascript
+document.getElementById(id);
+id: A string representing the id attribute of the element you want to select.
+
+=>2. getElementsByClassName()
+                                The getElementsByClassName() method is used to select all elements with a
+        specific class name. This method returns a live HTMLCollection (an array-like object) of all matching
+        elements.
+
+=>Syntax:
+javascript
+document.getElementsByClassName(className);
+className: A string representing the class name of the elements you want to select.
+
+=>3. querySelector()
+                    The querySelector() method is used to select the first element that matches a specified 
+        CSS selector. This method is much more versatile than getElementById() and getElementsByClassName()
+    because it allows you to use any valid CSS selector.
+
+=>Syntax:
+javascript
+document.querySelector(selector);
+selector: A string containing a valid CSS selector (e.g., .className, #id, div, p:first-child).

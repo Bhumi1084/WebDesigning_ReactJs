@@ -1,0 +1,45 @@
+qouestion 1: What is the DOM(Document Object Model) in javascript? How does javascript interact with the DOM?
+
+=>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure 
+  of a web page as a tree of objects, where each object corresponds to a part of the page (such as elements,
+  attributes, text, etc.). The DOM provides a way for JavaScript (or other programming languages) to interact 
+  with and manipulate HTML and XML documents dynamically.
+
+=>In the DOM, each HTML element is represented as a node, and these nodes are organized in a hierarchical 
+  structure (tree-like format) with a root node at the top. For example, the <html> tag is the root node, and 
+  elements like <head>, <body>, <div>, <p>, etc., are all child nodes in the DOM tree.
+
+
+=>How JavaScript Interacts with the DOM
+                                        JavaScript interacts with the DOM by accessing and manipulating
+nodes, elements, attributes, and text content. JavaScript can:
+
+=>Access DOM Elements: JavaScript can select and access DOM elements using methods like getElementById(),
+  querySelector(), getElementsByClassName(), etc.
+
+=>Modify Elements: Once elements are selected, JavaScript can modify their content, style, attributes, and 
+even add or remove them from the DOM.
+
+=>Handle Events: JavaScript can attach event listeners to elements, allowing it to react to user interactions
+  (clicks, typing, etc.).
+
+=>Create/Remove Elements: JavaScript can create new elements dynamically and add them to the DOM, or remove
+  existing elements.
+
+=>How JavaScript Manipulates the DOM
+    =>Accessing Elements:
+
+document.getElementById(): Selects an element by its id.
+document.querySelector(): Selects the first element that matches a CSS selector.
+document.getElementsByClassName(): Selects elements by their class name.
+document.querySelectorAll(): Selects all elements that match a CSS selector.
+javascript
+
+const heading = document.getElementById('myHeading'); // Select by ID
+const paragraphs = document.querySelectorAll('p'); // Select all paragraphs
+
+=>Modifying Elements:
+
+Change text content: Use .textContent or .innerText to modify the text inside an element.
+Change HTML content: Use .innerHTML to modify the HTML content of an element.
+Change style: Use .style to change CSS styles directly from JavaScript.

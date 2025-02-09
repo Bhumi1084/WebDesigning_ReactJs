@@ -1,0 +1,61 @@
+<!-- Create an HTML page with a paragraph (<p>) that displays "Hello, World!".
+    o Use JavaScript to:
+    Change the text inside the paragraph to "JavaScript is fun!".
+    Change the color of the paragraph to blue.     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph with JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">Hello, World!</p>
+    <button id="changeButton">Click Me</button>
+
+    <script>
+        // Select the paragraph and button elements using their IDs
+        const paragraph = document.getElementById('message');
+        const button = document.getElementById('changeButton');
+
+        // Add an event listener to the button
+        button.addEventListener('click', () => {
+            // Change the text inside the paragraph
+            paragraph.textContent = 'JavaScript is fun!';
+
+            // Change the color of the paragraph to blue
+            paragraph.style.color = 'blue';
+        });
+    </script>
+</body>
+</html>

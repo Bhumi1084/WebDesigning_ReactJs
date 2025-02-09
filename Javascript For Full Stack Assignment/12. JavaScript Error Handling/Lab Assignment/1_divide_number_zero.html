@@ -1,0 +1,86 @@
+<!-- Write a JavaScript program that attempts to divide a number by zero. Use trycatchto handle the error and display an appropriate error message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division by Zero Handling</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .input-container {
+            margin-bottom: 15px;
+        }
+        .input-container label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .input-container input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .result {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Division by Zero Example</h1>
+    <div class="input-container">
+        <label for="numerator">Numerator:</label>
+        <input type="number" id="numerator">
+    </div>
+    <div class="input-container">
+        <label for="denominator">Denominator:</label>
+        <input type="number" id="denominator">
+    </div>
+    <button id="calculateButton">Calculate</button>
+    <div class="result" id="result"></div>
+
+    <script>
+        document.getElementById('calculateButton').addEventListener('click', () => {
+            try {
+                const numerator = parseFloat(document.getElementById('numerator').value);
+                const denominator = parseFloat(document.getElementById('denominator').value);
+
+                if (isNaN(numerator) || isNaN(denominator)) {
+                    throw new Error("Please enter valid numeric values.");
+                }
+
+                if (denominator === 0) {
+                    throw new Error("Division by zero is not allowed.");
+                }
+
+                const result = numerator / denominator;
+                document.getElementById('result').textContent = `Result: ${result}`;
+            } catch (error) {
+                document.getElementById('result').textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+question 2: provide an Example of how to use setTimeout() to delay action by 2 seconds.
+
+=>Here's a simple example of how you can use setTimeout() to delay an action by 2 seconds. In this case, we
+
+// Delay the action by 2 seconds (2000 milliseconds)
+setTimeout(function() {
+console.log("This message is shown after a 2-second delay!");
+}, 2000); // 2000 ms = 2 seconds
+
+=>How it works:
+
+The function inside setTimeout() will execute after a 2-second delay.
+After 2 seconds, "This message is shown after a 2-second delay!" will be logged to the console.
+
+You can replace the console.log() with any other action you want to delay, such as updating the DOM or calling
+another function.
+
+Let me know if you'd like more examples!
