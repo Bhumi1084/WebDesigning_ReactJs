@@ -1,0 +1,21 @@
+Question 3: Why is this.setState() used in class components, and how does it work?
+
+=> In React class components, this.setState() is used to update the state of the component. It:
+
+-> Modifies the Component's State: Allows developers to update the state object dynamically.
+
+-> Triggers a Re-render: Informs React that the state has changed, prompting the component and its child components to re-render with the updated data.
+
+-> Merges State: Updates only the specified properties in the state, leaving others unchanged.
+
+=> How this.setState() Works
+
+=> 1. Asynchronous Updates:
+-> this.setState() does not immediately update the state; instead, it schedules the state update to be processed by React.
+-> This ensures optimal performance by batching multiple state updates.
+
+=> 2. Partial Updates:
+-> Only the properties specified in the setState call are updated. Other properties in the state remain unchanged.
+
+=> 3. Re-rendering:
+-> Once the state is updated, React compares the new state with the previous state and efficiently updates the DOM with the changes.

@@ -1,0 +1,12 @@
+Question 2: Explain the concept of state in React and how it is used to manage component
+data.
+
+=> State in React is an object that holds dynamic data and determines the component's behavior and rendering. 
+
+=> It represents the "current state" of a component, allowing React to manage and update data over time in response to user actions or other changes.
+
+=> Using State in React
+
+-> 1. In Class Components: State is declared in the constructor method as an object.Changes to state trigger re-rendering of the component.
+
+-> 2. In Functional Components: State is managed using the useState hook.
