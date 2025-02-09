@@ -1,0 +1,19 @@
+Question 1: What is React.js? How is it different from other JavaScript frameworks and
+libraries?
+
+=> React.js is a popular JavaScript library developed by Facebook (now Meta) for building user interfaces, especially for single-page applications. It allows developers to create reusable UI components and efficiently manage the rendering of dynamic data.
+
+=> React.js : Library for building UIs
+=> Other Frameworks/Libraries : Frameworks (e.g., Angular) are full-fledged solutions, whereas libraries (e.g., jQuery) focus on specific tasks.
+
+=> React.js : Uses Virtual DOM for efficient updates
+=> Other Frameworks/Libraries : Frameworks like Angular use real DOM manipulation (though Angular also uses optimization techniques like incremental DOM).
+
+=> React.js : Highly flexible, focuses only on the view layer
+=> Other Frameworks/Libraries : Frameworks like Angular or Vue provide built-in solutions for routing, state management, etc.
+
+=> React.js : Lightweight (React core library is small)
+=> Other Frameworks/Libraries : Frameworks like Angular are larger due to their bundled features.
+
+=> React.js : Large, with a vast ecosystem of tools
+=> Other Frameworks/Libraries : Other frameworks/libraries may have smaller ecosystems.
