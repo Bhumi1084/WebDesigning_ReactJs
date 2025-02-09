@@ -1,0 +1,15 @@
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+
+=> Curly braces {} in JSX play a crucial role in embedding JavaScript expressions within JSX code. 
+
+=> They act as placeholders that allow developers to integrate dynamic content, execute logic, or invoke functions within the UI structure.
+
+=> Flexibility: Makes UI creation dynamic and interactive by combining static layout with dynamic data.
+
+=> Efficiency: Reduces the need for manual DOM manipulations by integrating logic directly into the structure.
+
+=> Readability: Keeps logic and UI together, enhancing code clarity.
+
+=> Curly braces {} in JSX are indispensable for embedding JavaScript expressions, making React components powerful and dynamic. 
+
+=> They bridge the gap between logic and UI, enabling seamless integration of data and interactivity.

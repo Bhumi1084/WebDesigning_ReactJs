@@ -1,0 +1,11 @@
+Question 1: What is JSX in React.js? Why is it used?
+
+=> JSX (JavaScript XML) is a syntax extension for JavaScript that is commonly used with React. 
+=> It allows developers to write HTML-like code within JavaScript files, making it easier to create and visualize the structure of the UI components.
+
+=> Why is JSX Used?
+-> Improved Readability and Clarity
+-> Seamless Integration of Logic and UI
+-> Enhanced Developer Productivity
+-> Component Composition
+-> Type Safety and Error Prevention

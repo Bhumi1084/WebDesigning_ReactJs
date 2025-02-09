@@ -1,0 +1,10 @@
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript inside
+JSX?
+
+=> JSX is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript. 
+
+=> While it looks like HTML, JSX is not plain JavaScript—it must be transpiled into JavaScript before it can run in the browser.
+
+=> JSX differs from regular JavaScript in syntax, the need for transpilation, and its ability to blend JavaScript expressions with HTML-like code.
+
+=> Writing JavaScript inside JSX enhances flexibility, making it a powerful tool for building dynamic and interactive UIs.
