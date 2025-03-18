@@ -1,0 +1,65 @@
+Question 2: What are some common event handlers in React.js? Provide examples of
+onClick, onChange, and onSubmit
+
+=> React provides a variety of event handlers to interact with user actions. Some commonly used ones are:
+
+1. onClick: Handles click events.
+2. onChange: Handles changes in input fields.
+3. onSubmit: Handles form submissions.
+
+1. onClick Event Handler :
+-> The onClick handler is triggered when a user clicks on an element, such as a button.
+-> Example:
+function App() {
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
+
+  return <button onClick={handleClick}>Click Me</button>;
+}
+
+2. onChange Event Handler :
+-> The onChange handler is triggered when the value of an input element (e.g., text field, checkbox) changes.
+-> Example:
+import { useState } from "react";
+
+function App() {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" value={inputValue} onChange={handleChange} />
+      <p>Current Value: {inputValue}</p>
+    </div>
+  );
+}
+
+3. onSubmit Event Handler :
+-> The onSubmit handler is triggered when a form is submitted, typically by pressing the submit button.
+-> Example:
+import { useState } from "react";
+function App() {
+  const [formData, setFormData] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevents page reload
+    alert(`Form submitted with: ${formData}`);
+  };
+  const handleChange = (event) => {
+    setFormData(event.target.value);
+  };
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={formData}
+        onChange={handleChange}
+        placeholder="Enter something"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}

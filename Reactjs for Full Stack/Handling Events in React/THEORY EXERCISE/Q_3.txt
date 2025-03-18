@@ -1,0 +1,11 @@
+Question 3: Why do you need to bind event handlers in class components?
+
+=> In React class components, event handlers do not automatically bind to the instance of the class (this). 
+
+=> If you try to use an event handler as is (without binding), the value of this inside the handler will be undefined or reference the wrong context when the function is executed.
+
+=> To ensure this refers to the class instance and has access to its properties and methods.
+
+=> This issue does not arise in functional components since this is not used. 
+
+=> Instead, React hooks (useState, useEffect, etc.) are used for managing state and lifecycle.

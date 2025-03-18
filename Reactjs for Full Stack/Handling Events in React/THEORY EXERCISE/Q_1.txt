@@ -1,0 +1,18 @@
+Question 1: How are events handled in React compared to vanilla JavaScript? Explain the
+concept of synthetic events
+
+=> Aspect : Attachment
+=> Vanilla JS Events : Added directly to DOM elements
+=> React Synthetic Events : Managed via JSX attributes in components
+
+=> Aspect : Cross-Browser Support
+=> Vanilla JS Events : Requires polyfills for compatibility
+=> React Synthetic Events : Handled natively by React's abstraction
+
+=> Aspect : Event Pooling
+=> Vanilla JS Events : Not applicable
+=> React Synthetic Events : Events are pooled for efficiency
+ 
+=> Aspect : Event Handler Context
+=> Vanilla JS Events : this may need binding
+=> React Synthetic Events : Automatically bound in modern React (hooks/components)
