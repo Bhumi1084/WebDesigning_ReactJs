@@ -1,0 +1,14 @@
+Question 2: Explain how if-else, ternary operators, and && (logical AND) are used in JSX
+for conditional rendering.
+
+=> In JSX, conditional rendering is a way to decide what to display in the UI based on a condition. 
+
+=> Below is a detailed explanation of how if-else, ternary operators, and the logical && operator are used for conditional rendering in React.
+
+=> Use if-else for more complex branching logic.
+
+=> Use the ternary operator for concise and readable true/false conditions.
+
+=> Use && for conditions where only the true case needs rendering. 
+
+=> By choosing the appropriate method, you can write cleaner and more maintainable conditional rendering logic in JSX.
