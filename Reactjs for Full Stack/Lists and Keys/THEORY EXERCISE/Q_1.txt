@@ -1,0 +1,17 @@
+Question 1: How do you render a list of items in React? Why is it important to use keys
+when rendering lists?
+
+=> Keys are important for React's reconciliation process.
+
+=> React uses keys to identify which elements in the list have changed, been added, or removed. 
+
+=> This optimization allows React to efficiently update the DOM and maintain performance.
+
+=> Benefits of Using Keys:
+
+1. Improved Performance:
+    => Helps React minimize re-renders by identifying unchanged elements.
+2. Accurate Updates:
+    => Ensures React matches the correct virtual DOM element with its counterpart in the real DOM.
+3. Prevents Rendering Bugs:
+    => Without unique keys, React may incorrectly reuse elements or mismanage updates.
