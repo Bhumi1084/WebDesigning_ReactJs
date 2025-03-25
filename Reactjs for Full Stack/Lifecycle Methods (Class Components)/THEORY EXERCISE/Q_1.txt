@@ -1,0 +1,17 @@
+Question 1: What are lifecycle methods in React class components? Describe the phases of a
+component’s lifecycle.
+
+=> Lifecycle methods are special methods in React class components that allow you to hook into specific moments of a component's life. 
+
+=> These methods help manage behavior during the component's mounting, updating, and unmounting phases.
+
+=> Phases of a Component’s Lifecycle
+
+1. Mounting Phase:
+->This phase occurs when a component is being created and inserted into the DOM for the first time.
+
+2. Updating Phase:
+-> This phase occurs when a component’s state or props change, causing a re-render.
+
+3. Unmounting Phase:
+-> This phase occurs when a component is being removed from the DOM.

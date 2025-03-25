@@ -1,0 +1,30 @@
+Question 2: Explain the purpose of componentDidMount(), componentDidUpdate(),
+and componentWillUnmount().
+
+1. componentDidMount()
+=> When it is called:
+    -> Invoked once, immediately after the component is mounted (inserted into the DOM).
+=> Purpose:
+    -> Used to perform any setup required for the component, such as:
+        -> Fetching data from an API.
+        -> Setting up event listeners.
+        -> Initializing third-party libraries.
+
+2. componentDidUpdate()
+=> When it is called:
+    -> Invoked immediately after the component updates, i.e., after the render() method is re-executed due to changes in props or state.
+=> Purpose:
+    -> Used to perform actions in response to changes, such as:
+        -> Fetching new data when a prop changes.
+        -> Updating the DOM based on updated state.
+        -> Logging or debugging component updates.
+
+3. componentWillUnmount()
+=> When it is called:
+    -> Invoked immediately before the component is unmounted (removed from the DOM).
+=> Purpose:
+    -> Used to clean up resources such as:
+        -> Removing event listeners.
+        -> Cancelling API requests.
+        -> Clearing timers or intervals.
+        -> Releasing resources like subscriptions.
