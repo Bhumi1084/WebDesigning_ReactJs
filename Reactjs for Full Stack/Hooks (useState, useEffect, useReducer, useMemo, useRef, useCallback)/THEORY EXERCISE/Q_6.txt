@@ -1,0 +1,21 @@
+Question 6 : What is useRef ? How to work in react app?
+
+=> The useRef hook in React is a powerful tool that allows you to create mutable references that persist across renders.
+
+=> How it works in a React app:
+
+1. Creating a ref:
+    -> You create a ref using the useRef hook and assign it an initial value (which can be null).
+    -> const myRef = useRef(initialValue);
+
+2. Accessing the current value:
+    -> The ref object has a current property that holds the current value. You can access and modify this value directly.
+    -> myRef.current
+
+3. Attaching a ref to a DOM element:
+    -> To attach a ref to a DOM element, you pass the ref object to the element's ref attribute.
+    -> <input ref={myRef} />
+    -> React will then set the current property of the ref object to the DOM element.
+
+4. Mutating the value::
+    -> Unlike state variables, changing the current property of a ref does not trigger a re-render.

@@ -1,0 +1,13 @@
+Question 5: What’s the Difference between the useCallback & useMemo Hooks?
+
+=> useCallback: This hook memoizes a function itself.
+=> useMemo: This hook memoizes a calculated value
+
+=> useCallback: It also takes a function and a dependency array as arguments.
+=> useMemo: It takes a function and a dependency array as arguments.
+
+=> useCallback: It returns the memoized function.
+=> useMemo: It executes the function and returns the result.
+
+=> useCallback: It only creates a new function reference if the dependencies change.
+=> useMemo: It only re-executes the function and recalculates the value if the dependencies change.

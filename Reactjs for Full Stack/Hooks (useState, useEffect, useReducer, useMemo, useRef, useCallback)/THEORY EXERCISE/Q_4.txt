@@ -1,0 +1,9 @@
+Question 4: What is the purpose of useCallback & useMemo Hooks?
+
+=> useMemo is used to memoize the result of a computation. It caches the computed value and only recalculates it when its dependencies change.
+   
+=> This is particularly useful for expensive calculations that would otherwise be performed on every render, potentially slowing down the application.
+
+=> useCallback is used to memoize functions. It caches the function itself, preventing it from being recreated on every render.   
+
+=> This is especially important when passing callbacks as props to child components, as it can prevent unnecessary re-renders of those child components.

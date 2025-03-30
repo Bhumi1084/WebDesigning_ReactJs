@@ -1,0 +1,22 @@
+Question 3: What is useReducer ? How we use in react app?
+
+=> useReducer is a React hook that lets you manage complex state in functional components.
+
+=> It works by taking a reducer function and an initial state, and it returns the current state and a dispatch function.
+
+=> The reducer function specifies how the state should be updated in response to actions.
+
+=> How it works:
+
+1. Reducer Function:
+    -> This function takes the current state and an action as arguments, and it returns the new state.   
+        The action is an object that describes how the state should be changed.   
+    ->It is common to use a switch statement inside of the reducer function, to handle different action     types.   
+
+2. Initial State:
+    -> This is the initial value of the state.
+
+3. Dispatch Function:
+    -> This function is used to trigger state updates by dispatching actions to the reducer.   
+    
+    -> When you call dispatch with an action, React calls the reducer function with the current state and the action, and then updates the state with the reducer's return value.
