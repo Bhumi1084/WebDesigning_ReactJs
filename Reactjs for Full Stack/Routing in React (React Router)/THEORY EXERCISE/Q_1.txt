@@ -1,0 +1,9 @@
+Question 1: What is React Router? How does it handle routing in single-page applications?
+
+=> React Router is a library for managing navigation in React applications. It enables routing in single-page applications (SPAs) by dynamically rendering components based on the URL, without refreshing the entire page.
+
+=> How it works:
+
+    -> React Router uses the browser's History API to update the URL and render the corresponding component. 
+    
+    -> It matches the current URL to defined routes and loads the associated components, maintaining the seamless user experience of an SPA.
