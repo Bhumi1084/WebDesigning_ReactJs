@@ -1,0 +1,25 @@
+Question 3: How do you fetch data from a Json-server API in React? Explain the role of
+fetch() or axios() in making API requests.
+
+=> To fetch data from a JSON-Server API in React, you use libraries like fetch() (a built-in JavaScript function) or axios() (an external library) to make HTTP requests.
+
+=> API Endpoint: Identify the URL of the JSON-Server API (e.g., http://localhost:5000/users).
+
+=> Use fetch() or axios():
+    -> fetch() is a built-in JavaScript function that sends HTTP requests and returns a Promise.
+    -> axios() is an external library that simplifies HTTP requests, providing automatic JSON parsing, better error handling, and a cleaner syntax.
+
+=> React Lifecycle: Use the useEffect() hook to fetch data when the component mounts.
+
+=> Update State: Store the fetched data in a useState variable for rendering.
+
+=> Role of fetch() or axios():
+
+-> Request Handling: They send HTTP requests (GET, POST, PUT, DELETE) to interact with the API.
+
+-> Response Handling:
+    -> fetch(): Requires manual conversion of the response to JSON using .json().
+    -> axios(): Automatically parses JSON responses.
+
+-> Error Handling:
+    -> Both allow error detection, but axios() has better support for interceptors and error messages.

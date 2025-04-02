@@ -1,0 +1,37 @@
+Question 4: What is Firebase? What features does Firebase offer?
+
+=> Firebase is a platform developed by Google that provides backend services, tools, and infrastructure to build and scale web and mobile applications. 
+
+=> It simplifies backend development and enables developers to focus on creating apps without managing servers or complex infrastructure.
+
+=> Features of Firebase:
+
+1. Authentication:
+-> Provides secure and easy-to-integrate authentication methods like email/password, Google, Facebook, and more.
+
+2. Realtime Database:
+-> A NoSQL cloud-hosted database that syncs data in real time across connected clients.
+
+3. Cloud Firestore:
+-> A scalable and flexible NoSQL database for structured data with powerful querying capabilities.
+
+4. Cloud Storage:
+-> Securely stores and serves user-generated content like images, videos, and files.
+
+5. Hosting:
+-> Fast and secure hosting for web applications with integrated SSL and CDN.
+
+6. Cloud Functions:
+-> Serverless backend code execution triggered by Firebase events or HTTP requests.
+
+7. Analytics:
+-> Provides insights into user engagement and app performance.
+
+8. Push Notifications:
+-> Sends targeted notifications to users via Firebase Cloud Messaging (FCM).
+
+9. Crashlytics:
+-> Tracks, prioritizes, and fixes stability issues in real time.
+
+10. Performance Monitoring:
+-> Monitors app performance to optimize user experience.

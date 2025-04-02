@@ -1,0 +1,20 @@
+Question 5: Discuss the importance of handling errors and loading states when working
+withAPIs in React
+
+=> Importance of Handling Errors
+-> User Feedback: Informing users when something goes wrong (e.g., failed API call) enhances transparency and trust.
+
+-> Debugging: Proper error handling helps developers identify and fix issues during development and in production.
+
+-> Prevent Crashes: Unhandled errors can break the application, leading to poor user experience.
+
+-> Fallback Mechanisms: Allows the app to display alternative content or retry failed requests.
+
+=> Importance of Handling Loading States:
+-> User Experience: Showing a loading indicator prevents users from feeling the app is unresponsive.
+
+-> Performance Perception: A visible loading state manages user expectations, even during slow network responses.
+
+-> Avoid Premature Rendering: Ensures the UI is updated only after the data is fetched successfully.
+
+-> Better Navigation: Helps users understand when an operation, like form submission or page transition, is in progress.

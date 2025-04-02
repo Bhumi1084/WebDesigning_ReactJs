@@ -1,0 +1,17 @@
+Question 1: What do you mean by RESTful web services?
+
+=> RESTful web services are APIs that adhere to the principles of REST (Representational State Transfer), an architectural style for designing networked applications
+
+=> Stateless: Each request from the client to the server must contain all the information needed to process it, with no session state stored on the server
+
+=> Resource-Oriented: Resources are identified by URLs (e.g., /users/123 for user 123).
+
+=> HTTP Methods: Uses standard HTTP methods for operations:
+    -> GET: Retrieve data.
+    -> POST: Create new resources.
+    -> PUT/PATCH: Update existing resources.
+    -> DELETE: Remove resources.
+
+=> Data Formats: Commonly uses JSON or XML for request and response bodies.
+
+=> Uniform Interface: Ensures a consistent way of interacting with resources.

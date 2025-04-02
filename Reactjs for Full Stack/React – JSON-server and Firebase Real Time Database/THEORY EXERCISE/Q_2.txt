@@ -1,0 +1,29 @@
+Question 2: What is Json-Server? How we use in React ?
+
+=> JSON-Server is a lightweight tool for creating a mock REST API. 
+
+=> It allows developers to quickly set up a backend for testing or prototyping applications using a simple JSON file as the database.
+
+=> Example:
+import React, { useState, useEffect } from 'react';
+const App = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/users')
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
+  }, []);
+
+  return (
+    <div>
+      <h1>User List</h1>
+      <ul>
+        {users.map((user) => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+export default App;
