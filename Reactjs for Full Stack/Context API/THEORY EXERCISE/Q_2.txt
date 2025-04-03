@@ -1,0 +1,13 @@
+Question 2: Explain how createContext() and useContext() are used in React for
+sharing state.
+
+1. createContext()
+=> createContext() is used to create a Context object that holds shared state or values.
+=> It returns a Provider and a Consumer:
+    -> Provider: Supplies the state to consuming components.
+    -> Consumer (or useContext Hook): Retrieves the shared state in child components.
+
+2. useContext()
+=> useContext() is a React Hook that allows components to access the nearest Provider’s value directly.
+=> It eliminates the need for the Consumer component, making the code cleaner and more readable.
+=> useContext() re-renders the component whenever the context value changes.
