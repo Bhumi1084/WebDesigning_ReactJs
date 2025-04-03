@@ -1,0 +1,28 @@
+Question 1: What is Redux, and why is it used in React applications? Explain the core
+concepts of actions, reducers, and the store
+
+=> Redux is a state management library for JavaScript applications, commonly used with React. 
+
+=> It provides a centralized store for managing global state, making state updates predictable and easier to debug. 
+
+=> Redux follows a unidirectional data flow, ensuring that application state changes in a structured manner.
+
+=> React’s built-in state management (useState and useContext) works well for small to medium applications.
+
+=> However, as the app grows, managing state across multiple components becomes complex. Redux helps by:
+    ✔ Centralizing State Management – Stores the application state in a single place.
+    ✔ Ensuring Predictability – Uses strict rules for state updates, making debugging easier.
+    ✔ Enabling Time Travel Debugging – Tracks changes over time, useful for debugging.
+    ✔ Efficient Performance – Uses immutable state updates and optimizes re-renders.
+
+1. Actions – Describe What Happens
+=> Actions are plain JavaScript objects that describe what should change in the state.
+=> Each action must have a type property (a string) that defines the action.
+
+2. Reducers – Define How State Changes
+=> A pure function that takes the current state and an action, then returns a new state.
+=> Reducers must not modify the existing state directly; instead, they return a new object.
+
+3. Store – Holds the State
+=> The store is a global object that holds the entire state of the application.
+=> The store is created using createStore(reducer), and components can access it using Redux hooks.
